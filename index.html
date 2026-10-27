@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Website thực hành triển khai tự động bằng GitHub Actions và GitHub Pages.">
+  <title>DevOps - Dương Minh Hùng - 1822040311</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Về đầu trang">H<span>.</span></a>
+      <span class="header-label">Bài thực hành CI/CD</span>
+      <span class="status"><span class="status-dot"></span> GitHub Pages</span>
+    </div>
+  </header>
+
+  <main id="home" class="container">
+    <section class="hero">
+      <p class="eyebrow">DEPLOY AUTOMATION · CI/CD</p>
+      <h1>Dương Minh Hùng</h1>
+      <p class="student-id">Mã số sinh viên: <strong>1822040311</strong></p>
+      <p class="intro">Website thực hành quy trình tự động: viết code, đẩy lên GitHub, kiểm tra bằng GitHub Actions và triển khai lên Internet với GitHub Pages.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#pipeline">Tìm hiểu pipeline <span aria-hidden="true">↓</span></a>
+        <span id="version-badge" class="version-badge">Phiên bản 1.0</span>
+      </div>
+      <div class="hero-orb orb-one" aria-hidden="true"></div>
+      <div class="hero-orb orb-two" aria-hidden="true"></div>
+    </section>
+
+    <section id="pipeline" class="section-block">
+      <div class="section-heading">
+        <p class="eyebrow">QUY TRÌNH TỰ ĐỘNG</p>
+        <h2>Từ code đến website</h2>
+        <p>Mỗi lần push lên nhánh <code>main</code>, pipeline tự kiểm tra trước khi triển khai.</p>
+      </div>
+      <div class="steps-grid">
+        <article class="step-card">
+          <div class="step-number">01</div>
+          <h3>Push code</h3>
+          <p>Git lưu các thay đổi và gửi commit mới lên repository GitHub.</p>
+          <span class="step-tag">Git · GitHub</span>
+        </article>
+        <article class="step-card">
+          <div class="step-number">02</div>
+          <h3>Check</h3>
+          <p>GitHub Actions xác nhận đủ ba file website và thẻ <code>&lt;title&gt;</code> tồn tại.</p>
+          <span class="step-tag">CI · Kiểm tra</span>
+        </article>
+        <article class="step-card">
+          <div class="step-number">03</div>
+          <h3>Deploy</h3>
+          <p>Chỉ khi job <code>check</code> thành công, job <code>deploy</code> mới xuất bản website.</p>
+          <span class="step-tag">CD · Xuất bản</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="info-panel">
+      <div class="info-icon" aria-hidden="true">✓</div>
+      <div>
+        <h2>Vì sao cần CI/CD?</h2>
+        <p>Kiểm tra tự động giúp phát hiện lỗi cơ bản trước khi phiên bản mới được xuất bản. Nếu bước kiểm tra thất bại, bước triển khai sẽ bị bỏ qua và bản website đang chạy không bị thay bằng bản lỗi đó.</p>
+      </div>
+    </section>
+
+    <section class="student-card">
+      <div>
+        <p class="eyebrow">THÔNG TIN SINH VIÊN</p>
+        <h2>Dương Minh Hùng</h2>
+        <p>Thực hành triển khai website tự động với GitHub Actions.</p>
+      </div>
+      <div class="student-meta">
+        <span>MSSV</span>
+        <strong>1822040311</strong>
+        <span class="course-pill">DevOps cơ bản</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="current-year">2026</span> · Dương Minh Hùng</span>
+      <span>Được triển khai tự động bằng GitHub Actions</span>
+    </div>
+  </footer>
+</body>
+</html>
